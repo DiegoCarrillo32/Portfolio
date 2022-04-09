@@ -1,5 +1,6 @@
 :root {
   --primary : #121F3D;
+  --secondary : #192a53;
 }
 body {
   margin: 0;
@@ -12,7 +13,9 @@ body {
 }
 html {
   background-color: var(--primary);
+  scroll-behavior: smooth; 
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

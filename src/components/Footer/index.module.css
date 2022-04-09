@@ -1,0 +1,12 @@
+.about-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    color: white;
+    background-color: var(--secondary);
+}
+.about-contact section {
+    display: flex;
+    flex-direction: column;
+}
