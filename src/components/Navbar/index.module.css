@@ -11,6 +11,7 @@
     z-index: 1;
     height: 60px;
     padding: 0;
+    animation: .5s navbar 0.5s ease-in-out;
 }
 .NavbarUl {
     display: flex;
@@ -26,4 +27,12 @@
     color: white;
     font-size: 1rem;
     font-weight: bolder;
+}
+@keyframes navbar {
+    0%{
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }

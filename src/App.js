@@ -1,5 +1,4 @@
 
-import { BsFileArrowUp } from 'react-icons/bs';
 import './App.css';
 import img from './assets/diegoc.png';
 import { Footer } from './components/Footer';
@@ -25,11 +24,13 @@ function App() {
       
       <main className='body-container'>
         <div id='about-me' className='about-me'>
-          <p> 'All cats are loved cuz they are cute and pretty if you know, you know, ya get me? ' 'All cats are loved cuz they are cute and pretty if you know, you know, ya get me? '</p>
+          <p> I am a Junior software developer, currently studying and going through my third year of career, I am very passionate about learning and web development, I have strong knowledge about React and I really like it. I have also worked with Angular </p>
         </div>
         <section  id='projects' className='project-container'>
           <div className='project-info'>
-            <p>In this project i was trying to learn the basics of react!</p>
+            <h2>React blog</h2>
+            <p>'All cats are loved cuz they are cute and pretty if you know, you know, ya get me? ' </p>
+            
           </div>
           <div className='project-image'>
 
@@ -37,7 +38,8 @@ function App() {
         </section>
         <section className='project-container'>
           <div className='project-info'>
-            <p>In this project i was trying to learn the basics of react!</p>
+            <h2>React blog</h2>
+            <p>'All cats are loved cuz they are cute and pretty if you know, you know, ya get me? '</p>
           </div>
           <div className='project-image'>
 
@@ -45,9 +47,7 @@ function App() {
         </section>
         
       </main>
-      {/* <div className='goUp'> <BsFileArrowUp/> a </div> */}
       <Footer/>
-      
     </>
 
   );
