@@ -1,31 +1,33 @@
 import React from 'react'
 import styles from './index.module.css'
 import { VscGithub } from 'react-icons/vsc'
+import { AiOutlineInstagram } from 'react-icons/ai'
+
 export const Footer = () => {
   return (
     <footer id='contact' className={styles['about-contact']}>
         <section>
-            <h3>Contactos:</h3>
+            <h3>Contact me:</h3>
             <span>
-                email: dcgreenforest@gmail.com
+                Email: dcgreenforest@gmail.com
             </span>
             <span>
-                phone: (+506) 85543228    
+                Phone: (+506) 85543228    
             </span>
             
             
         </section>
         <section>
-            <h3>Redes:</h3>
+            <h3>Social media:</h3>
             <span>
-                <VscGithub/>
-                <a href='https://github.com/DiegoCarrillo32'>Github</a>
+                <a href='https://github.com/DiegoCarrillo32'>
+                    <VscGithub size={32} color={"white"}/>
+                </a>
             </span>
             <span>
-                Instagram:
-            </span>
-            <span>
-                Twitter:
+                <a href='https://github.com/DiegoCarrillo32'>
+                <AiOutlineInstagram size={32} color={"white"}/>
+                </a>
             </span>
 
         </section>
