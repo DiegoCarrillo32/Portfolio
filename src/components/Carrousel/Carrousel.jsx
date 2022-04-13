@@ -33,7 +33,7 @@ const Carrousel = ({ dataList = [] }) => {
   };
 
   return (
-    <div className={styles["carrousel-container"]}>
+    <div className={[styles["carrousel-container"]]}>
       <AiOutlineArrowLeft
         className={styles.iconsLeft}
         color={"white"}
