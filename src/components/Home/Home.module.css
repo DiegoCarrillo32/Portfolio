@@ -1,0 +1,69 @@
+
+.main-container {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+.left-container {
+    color: white;
+    font-size: 1.6rem;
+    margin: 100px;
+    width: 50%;
+}
+
+.img-wrapper {
+    width:400px;
+    height:400px;
+    /* background-color: white; */
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.no-margin {
+    margin: 0;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    
+}
+
+.image:hover{
+    transition: 1s all ease-in-out;
+    filter: none;
+}
+.arrow {
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    left: -50px;
+    z-index: 1;
+    background-color: rgb(254, 41, 86);
+}
+.social-media {
+    display: flex;
+    
+}
+.social-media a {
+    margin: 5px;
+    
+}
+
+
+.contact-button {
+    width: 160px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(254, 41, 86);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.contact-button:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(254, 41, 87, 0.141);
+    /* color: white; */
+}

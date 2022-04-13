@@ -1,12 +1,12 @@
 .Navbar {
-    position: sticky;
-    top: 0;
+    
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
     background-color: var(--secondary);
-    border-bottom: 1px solid #e5e5e5;
+    
     width: 100vw;
     z-index: 1;
     height: 60px;
@@ -19,14 +19,20 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    justify-content: space-evenly;   
+    justify-content: flex-end;   
     
 }
+
 .NavbarUl a {
+    padding: 10px;
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bolder;
+}
+.NavbarUl a:hover {
+    transition: .2s all ease-in-out;
+    color: aquamarine;
 }
 @keyframes navbar {
     0%{

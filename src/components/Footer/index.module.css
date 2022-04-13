@@ -4,9 +4,15 @@
     align-items: center;
     margin-top: 2rem;
     color: white;
-    background-color: var(--secondary);
+    background-color: var(--secondary-light);
 }
-.about-contact section {
+
+.section-display-row {
+    display: flex;
+    flex-direction: row;
+
+}
+.section-display-col {
     display: flex;
     flex-direction: column;
 }

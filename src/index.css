@@ -1,8 +1,8 @@
 :root {
-  --primary : #121F3D;
-  --primary-light : #192b54c3;
-  --secondary : #192a53;
-  --secondary-light : #2a427ac3;
+  --primary : #212121;
+  --primary-light : #0B192E;
+  --secondary : #212121;
+  --secondary-light : #303030;
 }
 body {
   margin: 0;
