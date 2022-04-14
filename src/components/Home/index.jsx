@@ -36,7 +36,7 @@ export const Home = ({setIsOpened}) => {
             </a>
           </span>
           <span>
-            <a href='https://github.com/DiegoCarrillo32'>
+            <a href='https://www.linkedin.com/in/diego-carrillo-695a39208/'>
               <AiOutlineLinkedin size={32} color={"white"} />
             </a>
           </span>

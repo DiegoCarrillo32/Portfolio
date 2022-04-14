@@ -28,6 +28,7 @@
     height: 100%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
+    transition: 1s all ease-in-out;
     
 }
 
@@ -40,7 +41,7 @@
     height: 1px;
     width: 50px;
     left: -50px;
-    z-index: 1;
+    /* z-index: 1; */
     background-color: rgb(254, 41, 86);
 }
 .social-media {
@@ -56,11 +57,13 @@
 .contact-button {
     width: 160px;
     height: 40px;
+
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid rgb(254, 41, 86);
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 .contact-button:hover{
     transition: all 0.2s ease-in-out;

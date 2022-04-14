@@ -51,6 +51,7 @@ const Carrousel = ({ dataList = [] }) => {
         }}
       />
       <img
+      className={styles.imgHover}
         src={dataList[CurrentImage].src}
         alt={dataList[CurrentImage].alt}
         width={"100%"}

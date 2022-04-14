@@ -11,10 +11,22 @@
     left: 0;
     top: 50%;
     cursor: pointer;
+    z-index: 1;
 }
 .iconsRight {
     position: absolute;
     right: 0;
     top: 50%;
     cursor: pointer;
+    z-index: 1;
 }
+.imgHover {
+    transition: all .5s ease-in-out;
+    opacity: 0.5;
+}
+.imgHover:hover {
+
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+

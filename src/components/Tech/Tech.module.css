@@ -1,0 +1,44 @@
+.Tech-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 500px;
+    width: 100%;
+}
+
+.Technologies {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.Tech-percent span {
+    font-size: 1.6rem;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.Tech-percent {
+    display: flex;
+    
+    color: white;
+    /* color: #4394aa; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.bar {
+    
+    width: 100%;
+    /* 5c6364 */
+    background-color: #5c6364;
+    height: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}

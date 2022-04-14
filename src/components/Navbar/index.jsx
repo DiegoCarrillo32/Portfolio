@@ -8,7 +8,7 @@ export const Navbar = () => {
         <nav className={styles.Navbar}>
             <ul className={styles.NavbarUl}>
                 <li><a href={"#about-me"}>About me</a> </li>
-                <li> <a href={"#tech"}>Technologies</a> </li>
+                <li> <a href={"#tech"}>Experience</a> </li>
                 <li> <a href={"#projects"}>Projects</a> </li>
             </ul>
             

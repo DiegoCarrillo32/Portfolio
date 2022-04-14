@@ -1,0 +1,48 @@
+.tech-display {
+    display: flex;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.6rem;
+    overflow: scroll;
+    height: 400px;
+    width: 100px;
+    border: 1px solid grey;
+    
+    /* justify-content: flex-start; */
+}
+
+.timeline span {
+    margin: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    transition: all .3s ease-in-out;
+}
+
+.timeline span:hover {
+    transition: all .3s ease-in-out;
+    border-bottom: 1px solid rgb(254, 41, 86);
+}
+
+.work-desc {
+    height: 400px;
+    border: 1px solid grey;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    flex-direction: column;
+}
+
+.work-desc span {
+    font-size: 1rem;
+    color: rgb(162, 162, 162);
+}
+
+.work-desc p {
+    width: 100%;
+}

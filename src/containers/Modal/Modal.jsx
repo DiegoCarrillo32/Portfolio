@@ -13,9 +13,9 @@ export const Modal = ({isOpened, onClose }) => {
                     <div className='modal-form-data'>
                         <h1>Send me an email!</h1>
                         
-                        <label>Email</label>
+                        {/* <label>Email</label> */}
                         <input type="text" placeholder='Your email'/>
-                        <label>Name</label>
+                        {/* <label>Name</label> */}
                         <input type="text" placeholder='Your name' />
 
                         <textarea placeholder='Tell me!' />

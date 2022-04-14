@@ -7,6 +7,8 @@ import Carrousel from './components/Carrousel/Carrousel';
 import { Footer } from './components/Footer';
 import { Home } from './components/Home';
 import { Navbar } from './components/Navbar';
+import { Tech } from './components/Tech';
+import { Work } from './components/Work';
 import { Modal } from './containers/Modal/Modal';
 function App() {
   const [isOpened, setIsOpened] = useState(false)
@@ -94,8 +96,8 @@ function App() {
         </div>
 
         <div className='body-container' >
-          <div ref={containerRef2} className={'not-visible'}>
-            <h1 className='title' id='about-me'>Who am I?</h1>
+          <div ref={containerRef2} className={'not-visible'} >
+            <h1 className='title' id='about-me' >Who am I?</h1>
             <div className='about-me'>
               <p> I am a Junior software developer, currently studying and going through my third year of career,
                 I am very passionate about learning and web development,
@@ -111,10 +113,16 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='tech' >
-            <h1 className='title' >Technologies I handle</h1>
-            <h1 className='title' >WIP</h1>
-
+          <div id='tech' className='experience-container' >
+            <div className='tech'>
+              <h1 className='title' >Tech experience</h1>
+              <Tech/>
+              
+            </div>
+            <div className='work'>
+              <h1 className='title'>Work experience</h1>
+              <Work/>
+            </div>
           </div>
           <div id='projects'> </div>
           <h1 className='title'>My projects</h1>
@@ -167,8 +175,6 @@ function App() {
       </div>
       <section class="loader">
         <div></div>
-        {/* <div></div> */}
-        {/* <div></div> */}
       </section>
     </div>
 
