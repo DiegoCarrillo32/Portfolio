@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
 import { useArrow } from "../../hooks/useArrow";
 import styles from "./Home.module.css";
@@ -41,15 +41,15 @@ export const Home = ({setIsOpened}) => {
             </a>
           </span>
           <span>
-            <a href='https://github.com/DiegoCarrillo32'>
+            <a href='https://www.instagram.com/datacode32/'>
               <AiOutlineInstagram size={32} color={"white"} />
             </a>
           </span>
-          <span>
+          {/* <span>
             <a href='https://github.com/DiegoCarrillo32'>
               <AiOutlineTwitter size={32} color={"white"} />
             </a>
-          </span>
+          </span> */}
         </div>
         <button className={styles['contact-button']} onClick={()=>setIsOpened(true)}>Contact me</button>
       </div>

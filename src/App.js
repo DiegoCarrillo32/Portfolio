@@ -10,6 +10,9 @@ import { Navbar } from './components/Navbar';
 import { Tech } from './components/Tech';
 import { Work } from './components/Work';
 import { Modal } from './containers/Modal/Modal';
+
+import img2 from './assets/diegoh.jpg'
+import img3 from './assets/diegoh2.jpg'
 function App() {
   const [isOpened, setIsOpened] = useState(false)
   const [IsVisible, setIsVisible] = useState(false)
@@ -18,6 +21,7 @@ function App() {
   const containerRef2 = useRef(null);
   const containerRef3 = useRef(null);
   const containerRef4 = useRef(null);
+  const containerRef5 = useRef(null);
 
   const callback = (entries) => {
     entries.forEach((entry) => {
@@ -43,15 +47,17 @@ function App() {
       observer.observe(containerRef.current); observer.observe(containerRef1.current);
       observer.observe(containerRef2.current); observer.observe(containerRef3.current);
       observer.observe(containerRef4.current);
+      observer.observe(containerRef5.current);
     }
     return () => {
-      if (containerRef.current) {
+      if (containerRef) {
         observer.unobserve(containerRef.current); observer.unobserve(containerRef1.current);
         observer.unobserve(containerRef2.current); observer.unobserve(containerRef3.current);
         observer.unobserve(containerRef4.current);
+        observer.unobserve(containerRef5.current);
       }
     }
-  }, [containerRef, containerRef1, containerRef2, containerRef3, containerRef4])
+  }, [containerRef, containerRef1, containerRef2, containerRef3, containerRef4, containerRef5])
 
 
 
@@ -85,6 +91,17 @@ function App() {
     },
   ]
 
+  const dataList3 = [
+    {
+      src:  img2,
+      alt: 'DOG'
+    },
+    {
+      src: img3,
+      alt: 'DOG'
+    },
+  ]
+
 
   return (
     <div className='page'>
@@ -97,23 +114,24 @@ function App() {
 
         <div className='body-container' >
           <div ref={containerRef2} className={'not-visible'} >
-            <h1 className='title' id='about-me' >Who am I?</h1>
             <div className='about-me'>
-              <p> I am a Junior software developer, currently studying and going through my third year of career,
-                I am very passionate about learning and web development,
-                I have strong knowledge about <span style={{ color: 'aqua' }}>React</span> and I really like it. I have done a few projects to practice
-                I have also worked with <span style={{ color: 'red' }}>Angular</span> and have also worked with it in college related projects </p>
-              <div className='logo-container'>
-                <div style={{ width: '300px', height: '300px' }} className={''}>
-                  <img style={{ height: '100%', }} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png' alt='React logo'></img>
-                </div>
-                <div style={{ width: '300px', height: '300px' }}>
-                  <img style={{ height: '100%' }} src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png' alt='Angular logo'></img>
+              <h1 className='title' id='about-me' >Who am I?</h1>
+              <div className='about-me-body'>
+                <p> I am a Junior software engineer from Costa Rica, currently studying and going through my third year of career.
+                  I am very passionate about learning and web development, I been learning different frameworks and libraries as Next, Angular or React.
+                  I like to learn new technologies in my free time and do sports!
+                </p>
+                <div className='about-me-img'>
+
+                  <img src={img3} alt="" width={'auto'} height={'400px'}/>
+                  <img src={img2} alt="" width={'300px'} height={'auto'}/>
                 </div>
               </div>
-            </div>
+              </div>
+ 
+            
           </div>
-          <div id='tech' className='experience-container' >
+          <div id='tech' className='experience-container' ref={containerRef5} >
             <div className='tech'>
               <h1 className='title' >Tech experience</h1>
               <Tech/>

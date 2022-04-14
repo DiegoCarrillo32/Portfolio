@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './index.module.css'
 import { VscGithub } from 'react-icons/vsc'
-import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai'
+import { AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai'
 
 export const Footer = () => {
   return (
@@ -32,15 +32,15 @@ export const Footer = () => {
             </a>
           </span>
             <span>
-                <a href='https://github.com/DiegoCarrillo32'>
+                <a href='https://www.instagram.com/datacode32/'>
                 <AiOutlineInstagram size={32} color={"white"}/>
                 </a>
             </span>
-            <span>
+            {/* <span>
             <a href='https://github.com/DiegoCarrillo32' >
               <AiOutlineTwitter size={32} color={"white"} />
             </a>
-          </span>
+          </span> */}
           </div>
 
         </section>

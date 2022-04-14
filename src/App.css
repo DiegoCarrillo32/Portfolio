@@ -27,6 +27,7 @@
     opacity: 0;
     transition: all .7s ease-in-out;
     margin-bottom: 300px;
+    
 }
 
 .visible {
@@ -62,11 +63,14 @@
     color: white;
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
     
 }
 .about-me p {
     margin: 100px;
     margin-top: 50px;
+    margin-bottom: 10px;
+    
     
 }
 
@@ -164,7 +168,30 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
+    opacity: 0;
     
+}
+.about-me-img {
+    display: flex;
+    
+}
+.about-me-img img {
+    margin: 10px;
+    filter: grayscale(100%);
+    transition: 1s all ease-in-out;
+    
+}
+.about-me-img img:hover {
+    transition: 1s all ease-in-out;
+    filter: none;
+    
+}
+
+.about-me-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
   
