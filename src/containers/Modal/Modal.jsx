@@ -61,7 +61,7 @@ export const Modal = ({ isOpened, onClose }) => {
                 </button>
               </div>
               {
-                Valid && <span>An error ocurred while sending image</span>
+                !Valid && <span>An error ocurred while sending image</span>
               }
             </div>
             
