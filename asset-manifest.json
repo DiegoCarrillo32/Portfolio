@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a1665d7b.css",
-    "main.js": "/Portfolio/static/js/main.ddf5a0ef.js",
-    "static/media/Pokedex.png": "/Portfolio/static/media/Pokedex.61b284fe5fd8410499dc.png",
-    "static/media/ReactBlog.png": "/Portfolio/static/media/ReactBlog.74081085f1ed86bcbf11.png",
-    "static/media/PokedexNative.png": "/Portfolio/static/media/PokedexNative.2c467a957a4a894d570f.png",
-    "static/media/diegoh2.jpg": "/Portfolio/static/media/diegoh2.73cb1a58fd46a5f79171.jpg",
-    "static/media/ReactBlogWrite.png": "/Portfolio/static/media/ReactBlogWrite.2a42d471aa9df195f5e5.png",
-    "index.html": "/Portfolio/index.html",
-    "main.a1665d7b.css.map": "/Portfolio/static/css/main.a1665d7b.css.map",
-    "main.ddf5a0ef.js.map": "/Portfolio/static/js/main.ddf5a0ef.js.map"
+    "main.css": "/static/css/main.a1665d7b.css",
+    "main.js": "/static/js/main.8c05f543.js",
+    "static/media/Pokedex.png": "/static/media/Pokedex.61b284fe5fd8410499dc.png",
+    "static/media/ReactBlog.png": "/static/media/ReactBlog.74081085f1ed86bcbf11.png",
+    "static/media/PokedexNative.png": "/static/media/PokedexNative.2c467a957a4a894d570f.png",
+    "static/media/diegoh2.jpg": "/static/media/diegoh2.73cb1a58fd46a5f79171.jpg",
+    "static/media/ReactBlogWrite.png": "/static/media/ReactBlogWrite.2a42d471aa9df195f5e5.png",
+    "index.html": "/index.html",
+    "main.a1665d7b.css.map": "/static/css/main.a1665d7b.css.map",
+    "main.8c05f543.js.map": "/static/js/main.8c05f543.js.map"
   },
   "entrypoints": [
     "static/css/main.a1665d7b.css",
-    "static/js/main.ddf5a0ef.js"
+    "static/js/main.8c05f543.js"
   ]
 }
