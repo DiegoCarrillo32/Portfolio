@@ -6,7 +6,7 @@ import { SiMinutemailer } from "react-icons/si";
 import "./Modal.css";
 export const Modal = ({ isOpened, onClose }) => {
   const [Form, setForm] = useState({name:"", message:"", email:""});
-  const [Valid, setValid] = useState(false)
+  const [Valid, setValid] = useState(true)
   const form = useRef()
   const onChange = ({ target }) => {
     setForm({
