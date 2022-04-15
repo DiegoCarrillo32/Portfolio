@@ -23,7 +23,7 @@
 
 .visible {
     /* opacity: 1; */
-    animation: 1s ease-out 0s 1 slideInFromRight forwards;
+    animation: .5s ease-out 0s 1 slideInFromRight forwards;
 }
 
 
