@@ -9,11 +9,13 @@ export const Home = ({setIsOpened}) => {
   const arrow2 = useRef(null);
   const arrow3 = useRef(null);
   const arrow4 = useRef(null);
-  useArrow(arrow, 500);
-  useArrow(arrow1, 400);
-  useArrow(arrow2, 20);
-  useArrow(arrow3, 300);
-  useArrow(arrow4, 600);
+  const width = window.innerWidth - 50;
+  
+  useArrow(arrow, 500, width);
+  useArrow(arrow1, 400, width);
+  useArrow(arrow2, 20, width);
+  useArrow(arrow3, 300, width);
+  useArrow(arrow4, 600, width);
 
   return (
     <div className={styles["main-container"]}>

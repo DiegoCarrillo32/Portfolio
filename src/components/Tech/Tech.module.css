@@ -42,3 +42,9 @@
     border-radius: 10px;
     overflow: hidden;
 }
+
+@media screen and (max-width:600px) {
+    .Tech-percent span {
+        margin-left: 50px;
+    }
+}

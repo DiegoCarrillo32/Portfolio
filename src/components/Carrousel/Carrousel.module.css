@@ -23,6 +23,7 @@
 .imgHover {
     transition: all .5s ease-in-out;
     opacity: 0.5;
+    
 }
 .imgHover:hover {
 
@@ -30,3 +31,11 @@
     opacity: 1;
 }
 
+@media screen and (max-width:600px) {
+    .carrousel-container {
+        height: 400px;
+    }
+
+
+    
+}

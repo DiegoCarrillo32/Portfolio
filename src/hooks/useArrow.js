@@ -1,12 +1,13 @@
 import { useEffect, useRef } from "react"
 
-export const useArrow = (arrow, initialValue) => {
+export const useArrow = (arrow, initialValue, innerWidth) => {
     const arrowPosition = useRef(0);
     
     useEffect(() => {
         arrow.current.style.top = `${initialValue}px`;
         const interval2 = setInterval(() => {
-          if (arrow.current && arrowPosition.current < 1500) {
+          
+          if (arrow.current && arrowPosition.current < innerWidth) {
             arrow.current.style.left = `${arrowPosition.current}px`;
             
             arrowPosition.current = arrowPosition.current + 1;
@@ -18,7 +19,7 @@ export const useArrow = (arrow, initialValue) => {
         return () => {
           clearInterval(interval2);
         };
-      }, [arrow, initialValue]);
+      }, [arrow, initialValue, innerWidth]);
 
 
 }

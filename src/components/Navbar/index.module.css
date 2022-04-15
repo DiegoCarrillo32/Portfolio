@@ -1,44 +1,87 @@
 .Navbar {
-    
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: var(--secondary);
-    top: 0;
-    width: 100vw;
-    z-index: 1;
-    height: 60px;
-    padding: 0;
-    animation: .5s navbar 0.5s ease-in-out;
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.5rem 1rem; */
+  background-color: var(--secondary);
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  height: 60px;
+  padding: 15px;
+
+  animation: 0.5s navbar 0.5s ease-in-out;
 }
+input[type="checkbox"] {
+  display: none;
+}
+
+.Navbar label {
+  display: none;
+}
+/* .logo {
+    margin-right: 50px;
+} */
 .NavbarUl {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: flex-end;   
-    
+  display: flex;
+  list-style: none;
+  gap: 25px;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .NavbarUl a {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: .9rem;
-    font-weight: bolder;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bolder;
 }
 .NavbarUl a:hover {
-    transition: .2s all ease-in-out;
-    color: aquamarine;
+  transition: 0.2s all ease-in-out;
+  color: aquamarine;
 }
 @keyframes navbar {
-    0%{
-        transform: translateY(-200px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Navbar {
+    padding: 0;
+  }
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    border-bottom: 1px solid grey;
+    
+    background-color: var(--secondary);
+  }
+  .NavbarUl {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .Navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    transition: all 1s ease-in-out;
+    max-height: 100vh;
+    z-index: 1;
+    /* background-color: red; */
+  }
 }

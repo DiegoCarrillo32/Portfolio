@@ -16,8 +16,8 @@ export const Work = () => {
   return (
     <section className={styles['tech-display']}>
       <div className={styles.timeline}>
-        {workList.map((workplace) => (
-          <span onClick={() => setCurrentWorkplace(workplace)}>
+        {workList.map((workplace, index) => (
+          <span key={index} onClick={() => setCurrentWorkplace(workplace)}>
             {workplace.name}
           </span>
         ))}

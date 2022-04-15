@@ -12,16 +12,7 @@
     font-size: 1.6rem;
     
 }
-.project-container {
-    margin-top: 50px;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-    
-}
+
 .not-visible {
     padding-top: 10px;
     opacity: 0;
@@ -35,44 +26,6 @@
     animation: 1s ease-out 0s 1 slideInFromRight forwards;
 }
 
-.project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 600px;
-
-}
-.project-info p {
-    margin: 0;
-}
-.project-info h2 {
-    color: white;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-.project-image {
-    width: 450px;
-    height: 450px;
-    /* background-color: #fff; */
-}
-.about-me {
-    
-    width: 100%;
-    height: 400px;
-    font-size: 1.6rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 120px;
-    
-}
-.about-me p {
-    margin: 100px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    
-    
-}
 
 .goToTop {
     position: fixed;
@@ -90,6 +43,7 @@
     z-index: 10;
     cursor: pointer;
     padding: 15px;
+    
     border: 1px solid rgb(254, 41, 86);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 50%;
@@ -98,10 +52,7 @@
 .openModal:hover{
     transition: all 0.2s ease-in-out;
     background-color: rgba(254, 41, 87, 0.141);
-    /* color: white; */
 }
-
-
 .title {
     display: flex;
     font-size: 3rem;
@@ -111,15 +62,12 @@
 }
 
 .title::after {
-    /* display: block; */
     height: 1px;
     width: 100px;
     content: "";
     background-color: rgb(254, 41, 86);
-    /* border-color: white; */
     margin: auto;
     margin-left: 10px;
-    /* border-style: dotted; */
 }
 .logo-container {
     display: flex;
@@ -131,6 +79,7 @@
 }
 .general-container {
     position: absolute;
+    width: 100%;
 }
 .loader {
     background: var(--primary);
@@ -170,28 +119,6 @@
     margin-bottom: 50px;
     opacity: 0;
     
-}
-.about-me-img {
-    display: flex;
-    
-}
-.about-me-img img {
-    margin: 10px;
-    filter: grayscale(100%);
-    transition: 1s all ease-in-out;
-    
-}
-.about-me-img img:hover {
-    transition: 1s all ease-in-out;
-    filter: none;
-    
-}
-
-.about-me-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
   
@@ -247,4 +174,24 @@
         transform: rotate(0deg);
     }
     
+}
+
+@media screen and (max-width:600px) {
+    .experience-container {
+        /* display: flex; */
+        flex-direction: column;
+        opacity: 1;
+        /* width: 100%; */
+    }
+    .tech {
+        width: 100%;
+    }
+    .openModal {
+        padding: 0;
+        padding-right: 20px;
+        border: none;
+    }
+    .goToTop {
+        padding: 0;
+    }
 }
