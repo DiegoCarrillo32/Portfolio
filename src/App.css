@@ -178,10 +178,8 @@
 
 @media screen and (max-width:600px) {
     .experience-container {
-        /* display: flex; */
         flex-direction: column;
-        opacity: 1;
-        /* width: 100%; */
+        
     }
     .tech {
         width: 100%;

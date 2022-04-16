@@ -4,6 +4,9 @@
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .iconsLeft {
@@ -21,6 +24,9 @@
     z-index: 1;
 }
 .imgHover {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     transition: all .5s ease-in-out;
     opacity: 0.5;
     

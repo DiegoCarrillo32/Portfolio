@@ -15,6 +15,8 @@ import img1 from './assets/Pokedex.png'
 import img2 from './assets/PokedexNative.png'
 import img3 from './assets/ReactBlog.png'
 import img4 from './assets/ReactBlogWrite.png'
+import img5 from './assets/dashboard.png'
+import img6 from './assets/mainview.png'
 import './App.css';
 
 
@@ -44,12 +46,13 @@ function App() {
     })
 
   }
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .5
+  }
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 1
-    }
+
     const observer = new IntersectionObserver(callback, options)
     if (containerRef.current) {
       observer.observe(containerRef.current); observer.observe(containerRef1.current);
@@ -95,12 +98,12 @@ function App() {
   ]
   const dataList3 = [
     {
-      src: '',
-      alt: 'NoIMG'
+      src: img5,
+      alt: 'Dashboard from YVY'
     },
     {
-      src: '',
-      alt: 'NoIMG'
+      src: img6,
+      alt: 'Mainview from YVY'
     },
     
   ]

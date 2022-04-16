@@ -47,15 +47,14 @@ const Carrousel = ({ dataList = [] }) => {
         color={"white"}
         size={32}
         onClick={() => {
-          otherImage(true);
+          otherImage(true); 
         }}
       />
       <img
-      className={styles.imgHover}
+        
+        className={styles.imgHover}
         src={dataList[CurrentImage].src}
         alt={dataList[CurrentImage].alt}
-        width={"100%"}
-        height={"100%"}
       />
     </div>
   );
