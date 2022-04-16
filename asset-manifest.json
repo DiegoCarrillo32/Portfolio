@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.add1ca13.css",
-    "main.js": "/static/js/main.5e3aeb4c.js",
+    "main.css": "/static/css/main.e3823e2e.css",
+    "main.js": "/static/js/main.ddcadc12.js",
+    "static/media/mainview.png": "/static/media/mainview.94caff6bbdc509d0e34b.png",
     "static/media/Pokedex.png": "/static/media/Pokedex.61b284fe5fd8410499dc.png",
     "static/media/ReactBlog.png": "/static/media/ReactBlog.74081085f1ed86bcbf11.png",
     "static/media/PokedexNative.png": "/static/media/PokedexNative.2c467a957a4a894d570f.png",
+    "static/media/dashboard.png": "/static/media/dashboard.d6ce82efe66ef064a34e.png",
     "static/media/diegoh2.jpg": "/static/media/diegoh2.73cb1a58fd46a5f79171.jpg",
     "static/media/ReactBlogWrite.png": "/static/media/ReactBlogWrite.2a42d471aa9df195f5e5.png",
     "index.html": "/index.html",
-    "main.add1ca13.css.map": "/static/css/main.add1ca13.css.map",
-    "main.5e3aeb4c.js.map": "/static/js/main.5e3aeb4c.js.map"
+    "main.e3823e2e.css.map": "/static/css/main.e3823e2e.css.map",
+    "main.ddcadc12.js.map": "/static/js/main.ddcadc12.js.map"
   },
   "entrypoints": [
-    "static/css/main.add1ca13.css",
-    "static/js/main.5e3aeb4c.js"
+    "static/css/main.e3823e2e.css",
+    "static/js/main.ddcadc12.js"
   ]
 }
