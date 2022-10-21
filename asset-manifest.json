@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3823e2e.css",
-    "main.js": "/static/js/main.ddcadc12.js",
+    "main.css": "/static/css/main.b86e7576.css",
+    "main.js": "/static/js/main.2c074a7f.js",
     "static/media/mainview.png": "/static/media/mainview.94caff6bbdc509d0e34b.png",
     "static/media/Pokedex.png": "/static/media/Pokedex.61b284fe5fd8410499dc.png",
     "static/media/ReactBlog.png": "/static/media/ReactBlog.74081085f1ed86bcbf11.png",
+    "static/media/CVDiegoC.pdf": "/static/media/CVDiegoC.2502c518092fdc9674f4.pdf",
     "static/media/PokedexNative.png": "/static/media/PokedexNative.2c467a957a4a894d570f.png",
     "static/media/dashboard.png": "/static/media/dashboard.d6ce82efe66ef064a34e.png",
     "static/media/diegoh2.jpg": "/static/media/diegoh2.73cb1a58fd46a5f79171.jpg",
     "static/media/ReactBlogWrite.png": "/static/media/ReactBlogWrite.2a42d471aa9df195f5e5.png",
+    "static/media/image.jpeg": "/static/media/image.e3636e7767afc7444c83.jpeg",
     "index.html": "/index.html",
-    "main.e3823e2e.css.map": "/static/css/main.e3823e2e.css.map",
-    "main.ddcadc12.js.map": "/static/js/main.ddcadc12.js.map"
+    "main.b86e7576.css.map": "/static/css/main.b86e7576.css.map",
+    "main.2c074a7f.js.map": "/static/js/main.2c074a7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3823e2e.css",
-    "static/js/main.ddcadc12.js"
+    "static/css/main.b86e7576.css",
+    "static/js/main.2c074a7f.js"
   ]
 }
