@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
 import { useArrow } from "../../hooks/useArrow";
+import me from "../../assets/image.jpeg"
 import styles from "./Home.module.css";
 export const Home = ({setIsOpened}) => {
   const arrow = useRef(null);
@@ -25,7 +26,7 @@ export const Home = ({setIsOpened}) => {
       <div className={styles.arrow} ref={arrow3}></div>
       <div className={styles.arrow} ref={arrow4}></div>
 
-      <div className={styles["left-container"]}>
+        <div className={styles["left-container"]}>
         <p className={styles["no-margin"]} style={{ color: "#FE2956" }}>
           My name is
         </p>
@@ -47,20 +48,13 @@ export const Home = ({setIsOpened}) => {
               <AiOutlineInstagram size={32} color={"white"} />
             </a>
           </span>
-          {/* <span>
-            <a href='https://github.com/DiegoCarrillo32'>
-              <AiOutlineTwitter size={32} color={"white"} />
-            </a>
-          </span> */}
         </div>
         <button className={styles['contact-button']} onClick={()=>setIsOpened(true)}>Contact me</button>
       </div>
       <div className={styles["img-wrapper"]}>
         <img
           className={styles.image}
-          src={
-            "https://media-exp1.licdn.com/dms/image/C4E03AQHT8nMb11X5Ow/profile-displayphoto-shrink_800_800/0/1627689957398?e=1655337600&v=beta&t=qa-Jb6sWFtOi9hY1zPI0qyePpzZup08sntlPc5yF0NY"
-          }
+            src={me}
           alt='me'></img>
       </div>
     </div>

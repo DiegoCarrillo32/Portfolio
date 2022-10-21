@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './index.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import pdf from '../../assets/CVDiegoC.pdf'
 
 export const Navbar = () => {
     
@@ -16,6 +17,8 @@ export const Navbar = () => {
                     <li><a href={"#about-me"}>About me</a> </li>
                     <li> <a href={"#tech"}>Experience</a> </li>
                     <li> <a href={"#projects"}>Projects</a> </li>
+                    <li> <a  href={pdf}>Resumé</a> </li>
+
                 </ul>
             </div>
             

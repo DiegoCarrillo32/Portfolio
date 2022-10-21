@@ -1,13 +1,10 @@
 .about-me {
     
-    width: 100%;
-    height: 400px;
+width: 100vw;
     font-size: 1.6rem;
     color: white;
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
-    
 }
 .about-me p {
     margin: 100px;

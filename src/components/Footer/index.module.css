@@ -5,6 +5,7 @@
     margin-top: 2rem;
     color: white;
     background-color: var(--secondary-light);
+    height: 100%;
 }
 
 .section-display-row {

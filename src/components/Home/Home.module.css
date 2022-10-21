@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   margin-top: 50px;
-  margin-bottom: 300px;
+  height: 100vh;
 }
 .left-container {
   color: white;
@@ -64,9 +64,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .image {
-    display: none;
-  }
+/*  .image {*/
+/*    display: none;*/
+/*  }*/
   .main-container {
       width: 100%;
       margin-bottom: 30px;

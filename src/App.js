@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useEffect, useRef, useState } from 'react';
+
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFileArrowUp } from 'react-icons/bs';
 import { About } from './components/About';
@@ -18,60 +19,29 @@ import img4 from './assets/ReactBlogWrite.png'
 import img5 from './assets/dashboard.png'
 import img6 from './assets/mainview.png'
 import './App.css';
+import {useInView} from "framer-motion";
 
 
 function App() {
+
   const [isOpened, setIsOpened] = useState(false)
   const [IsVisible, setIsVisible] = useState(false)
-  const containerRef = useRef(null);
-  const containerRef1 = useRef(null);
   const containerRef2 = useRef(null);
-  const containerRef3 = useRef(null);
   const containerRef4 = useRef(null);
   const containerRef5 = useRef(null);
 
-  const callback = (entries) => {
-    entries.forEach((entry) => {
+  const isIn = useInView(containerRef4);
+  const isInRef5 = useInView(containerRef5, {once:true});
+  const isInRef2 = useInView(containerRef2, {once:true});
+    useEffect(()=> {
+        
+        if(isIn){
+            setIsVisible(false)
+        }else {
 
-      if (entry.isIntersecting && entry.target.id !== 'below') {
-        entry.target.classList.add('visible')
-      }
-
-      if (entry.target.id === 'below' && !entry.isIntersecting) {
-        setIsVisible(true)
-      }
-      if (entry.target.id === 'below' && entry.isIntersecting) {
-        setIsVisible(false)
-      }
-    })
-
-  }
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: .5
-  }
-  useEffect(() => {
-
-    const observer = new IntersectionObserver(callback, options)
-    if (containerRef.current) {
-      observer.observe(containerRef.current); observer.observe(containerRef1.current);
-      observer.observe(containerRef2.current); observer.observe(containerRef3.current);
-      observer.observe(containerRef4.current);
-      observer.observe(containerRef5.current);
-    }
-    return () => {
-      if (containerRef) {
-
-        observer.unobserve(containerRef.current); observer.unobserve(containerRef1.current);
-        observer.unobserve(containerRef2.current); observer.unobserve(containerRef3.current);
-        observer.unobserve(containerRef4.current);
-        observer.unobserve(containerRef5.current);
-      }
-    }
-  }, [containerRef, containerRef1, containerRef2, containerRef3, containerRef4, containerRef5])
-
-
+            setIsVisible(true)
+        }
+    }, [isIn]);
 
 
   const dataList = [
@@ -112,19 +82,19 @@ function App() {
     {
       title: "Personal blog",
       description: "Its my own personal blog where I will be posting things that I find interesting, in the platform I can write the post, add images, etc, this is still a work in progress. I use React router dom, context API to build it.",
-      containerRef: containerRef,
+
       dataList: dataList
     },
     {
       title: "Pokedex API",
       description: "An App made with react where I used webpack, redux, my main goal was to understand this technologies. Also i worked on the mobile app when learning react native, it was a fun experience, and im still updating both projects whenever i have time!",
-      containerRef: containerRef1,
+
       dataList: dataList2
     },
     {
       title: "Project YVY",
       description: "College project for IBM Call for Code 2021, one of my biggest projects, as a team we managed to get on the regional finalists list, we used Angular as a Framework!",
-      containerRef: containerRef3,
+
       dataList: dataList3
     },
 
@@ -141,31 +111,52 @@ function App() {
         <Home setIsOpened={setIsOpened} />
 
         <div className='body-container' >
-          <section ref={containerRef2} className={'not-visible'} >
-            <About />
-          </section>
-          <section id='tech' className='experience-container' ref={containerRef5} >
+            {
+//                SOBRE MI
+            }
+            <section>
+                <About />
+            </section>
+            {
+                //                EXPERIENCIA
+            }
+
+            <section id='tech' className='experience-container' ref={containerRef5} style={{
+                transform: isInRef5 ? "none" : "translateX(-300px)",
+                opacity: isInRef5 ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}  >
             <article className='tech'>
-              <h1 className='title' >Tech experience</h1>
+              <h1 className='title' >TECH EXPERIENCE</h1>
               <Tech />
             </article>
             <article className='work'>
-              <h1 className='title'>Work experience</h1>
+              <h1 className='title'>WORK EXPERIENCE</h1>
               <Work />
             </article>
           </section>
           <div id='projects'> </div>
-          <section>
-            <h1 className='title'>My projects</h1>
+            {
+                //                PROYECTOS
+            }
+            <section ref={containerRef2} style={{
+                transform: isInRef2 ? "none" : "translateX(-300px)",
+                opacity: isInRef2 ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }} >
+            <h1 className='title'>PROJECTS</h1>
             {
               projects.map((project, index) => (
-                <Project containerRef={project.containerRef} dataList={project.dataList} description={project.description} title={project.title} key={index} />
+                <Project dataList={project.dataList} description={project.description} title={project.title} key={index} />
               ))
             }
           </section>
 
           <Modal isOpened={isOpened} onClose={() => setIsOpened(false)} />
-          <Footer />
+            {
+<Footer />
+            }
+
 
         </div>
         {
